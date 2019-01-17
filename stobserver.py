@@ -46,3 +46,6 @@ def read_students(x):
     students.columns = Columns
 
     return students
+
+if __name__ == '__main__':
+    main()
