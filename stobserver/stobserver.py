@@ -1,15 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import pandas as pd
 import string as str
 import re
-
-
-# In[26]:
 
 
 def read_students(x):
@@ -52,4 +46,3 @@ def read_students(x):
     students.columns = Columns
 
     return students
-
