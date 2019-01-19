@@ -5,8 +5,8 @@ import pandas as pd
 import string as str
 import re
 
-
 def read_students(x):
+    
     table = pd.read_html(x, encoding = 'UTF-8')
     students = pd.DataFrame(table[1])
     students.fillna('100%', inplace = True)
@@ -46,6 +46,12 @@ def read_students(x):
     students.columns = Columns
 
     return students
+
+def assign_status(x, student, projects, status):
+    students_idx = x[x['Name'].isin([student])].index
+    projects_idx = x[projects].columns
+    x.loc[students_idx, projects_idx] = status
+    return x
 
 if __name__ == '__main__':
     main()
