@@ -16,4 +16,5 @@ setup(
     description='A trial to gather students study data for analysis.',
     # We will also need a readme eventually (there will be a warning)
     # long_description=open('README.txt').read(),
+    zip_safe=False
 )
