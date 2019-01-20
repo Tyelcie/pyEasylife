@@ -4,7 +4,6 @@
 import pandas as pd
 import string as str
 import re
-import html5lib
 
 def read_students(x):
     
@@ -53,6 +52,3 @@ def assign_status(x, student, projects, status):
     projects_idx = x[projects].columns
     x.loc[students_idx, projects_idx] = status
     return x
-
-if __name__ == '__main__':
-    main()
