@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+__all__=['read_students', 'assign_status']
 
 import pandas as pd
 import string as str
