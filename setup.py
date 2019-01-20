@@ -1,17 +1,23 @@
-from setuptools import setup
-setup(
-    # Needed to silence warnings (and to be a worthwhile package)
+from setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+    
+setuptools.setup(
     name='stobserver',
     url='https://github.com/Tyelcie/stobserver',
     author='Tyelcie',
     author_email='tyelcie@gmail.com',
-    packages=['stobserver'],
+    packages=setuptools.find_packages(),
     install_requires=['pandas'],
     version='0.1',
-    # The license can be anything you like
-    license='MIT',
     description='A trial to gather students study data for analysis.',
     # We will also need a readme eventually (there will be a warning)
-    long_description=open('README.md').read(),
-    zip_safe=False
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
