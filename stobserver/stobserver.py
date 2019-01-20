@@ -4,6 +4,7 @@
 import pandas as pd
 import string as str
 import re
+import html5lib
 
 def read_students(x):
     

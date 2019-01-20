@@ -8,7 +8,7 @@ setup(
     # Needed to actually package something
     packages=['stobserver'],
     # Needed for dependencies
-    install_requires=['pandas'],
+    install_requires=['pandas','html5lib'],
     # *strongly* suggested for sharing
     version='0.1',
     # The license can be anything you like
