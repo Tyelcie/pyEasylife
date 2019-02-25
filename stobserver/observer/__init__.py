@@ -1,4 +1,4 @@
-name = 'stobserver'
+name = 'observer'
 
 import pandas as pd
 import string as str
