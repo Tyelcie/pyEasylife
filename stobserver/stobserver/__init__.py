@@ -53,3 +53,6 @@ def assign_status(x, student, projects, status):
     x.loc[students_idx, projects_idx] = status
     return x
 
+class Schedule:
+    def __init__():
+        
