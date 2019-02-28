@@ -10,7 +10,7 @@ setuptools.setup(
     author_email='tyelcie@gmail.com',
     packages=setuptools.find_packages(),
     install_requires=['pandas'],
-    version='0.1',
+    version='0.2',
     description='A trial to gather students study data for analysis.',
     # We will also need a readme eventually (there will be a warning)
     long_description=long_description,
