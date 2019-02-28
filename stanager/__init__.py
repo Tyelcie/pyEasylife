@@ -1,1 +1,3 @@
-__import__('observer').declare_namespace(__name__)
+__all__ = ['observer', 'operator']
+import observer
+import operator
