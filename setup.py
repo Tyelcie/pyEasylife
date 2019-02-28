@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
     
 setuptools.setup(
-    name='stobserver',
+    name='stanager',
     url='https://github.com/Tyelcie/stobserver',
     author='Tyelcie',
     author_email='tyelcie@gmail.com',
