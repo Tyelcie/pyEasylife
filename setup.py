@@ -9,7 +9,6 @@ setuptools.setup(
     author='Tyelcie',
     author_email='tyelcie@gmail.com',
     packages=setuptools.find_packages(),
-    namespace_packages = ['observer', 'operator'],
     install_requires=['pandas'],
     version='0.2',
     description='A trial to gather students study data for analysis.',
