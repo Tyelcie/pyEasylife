@@ -4,13 +4,13 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
     
 setuptools.setup(
-    name='stobserver',
+    name='stanager',
     url='https://github.com/Tyelcie/stobserver',
     author='Tyelcie',
     author_email='tyelcie@gmail.com',
-    packages=setuptools.find_packages(),
+    packages=['observer', 'operator'],
     install_requires=['pandas'],
-    version='0.1',
+    version='0.2',
     description='A trial to gather students study data for analysis.',
     # We will also need a readme eventually (there will be a warning)
     long_description=long_description,
