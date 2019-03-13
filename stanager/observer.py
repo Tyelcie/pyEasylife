@@ -52,7 +52,3 @@ def assign_status(x, student, projects, status):
     projects_idx = x[projects].columns
     x.loc[students_idx, projects_idx] = status
     return x
-
-class Schedule:
-    def __init__():
-        

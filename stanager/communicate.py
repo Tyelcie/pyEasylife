@@ -1,4 +1,4 @@
-name = 'operator'
+name = 'communicate'
 import pandas as pd
 import itchat as ic
 
