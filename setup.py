@@ -12,7 +12,7 @@ setuptools.setup(
     url='https://github.com/Tyelcie/stobserver',
     author='Tyelcie',
     author_email='tyelcie@gmail.com',
-    packages=find_packages(),
+    packages=setuptools.find_packages(),
     install_requires=install_packages,
     version=__version__,
     description='A trial to gather students study data for analysis.',
