@@ -1,7 +1,7 @@
 name = 'scheduling'
 
-def parse_time(time, format = '%Y-%m-%d %H:%M'):
-    parsed = datetime.datetime.strptime(time, format)
+def parse_time(time, str_format = '%Y-%m-%d %H:%M'):
+    parsed = datetime.datetime.strptime(time, str_format)
     return parsed
 
 class Classes:
