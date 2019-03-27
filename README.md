@@ -1,4 +1,4 @@
-# stobserver
+# stanager
 Students Observer. Process and visualize students learning pattern for my colleagues.
 
 ## Install
