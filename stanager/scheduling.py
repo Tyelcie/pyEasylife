@@ -53,10 +53,11 @@ class Mentor:
         if any(availability):
             previous = np.concatenate(list(self.schedule.values())) if bool(self.schedule) else list(self.schedule.values())
             previous = [tuple(map(parse_time, (a, b))) for (a, b) in previous]
-            conflict, conf_class = check_conflict(previous, proposal, self.rest)
+            conflict, conf_classes = check_conflict(previous, proposal, self.rest)
             if any(conflict):
-                conf_class = tuple(map(lambda x: x.strftime('%Y-%m-%d %H:%M'), conf_class))
-                print('老师在{}-{}这段时间内有课，而且请给老师{}分钟休息时间，另行安排!'.format(conf_class[0], conf_class[1], self.rest))
+                for conf_class in conf_classes:
+                    confed = tuple(map(lambda x: x.strftime('%Y-%m-%d %H:%M'), conf_class))
+                    print('老师在{}-{}这段时间内有课，而且请给老师{}分钟休息时间，另行安排!'.format(confed[0], confed[1], self.rest))
             else:
                 end = parse_time(start) + datetime.timedelta(minutes = self.classes.duration)
                 print('没问题，该时间段内老师可排课！')
