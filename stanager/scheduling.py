@@ -1,6 +1,7 @@
 name = 'scheduling'
 from itertools import compress
 import datetime
+import numpy as np
 
 def parse_time(time, str_format = '%Y-%m-%d %H:%M'):
     parsed = datetime.datetime.strptime(time, str_format)
