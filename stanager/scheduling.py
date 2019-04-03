@@ -30,7 +30,7 @@ def date_range(start, end):
     datelen = (scheduling.parse_time(end, str_format = '%Y-%m-%d') - scheduling.parse_time(start, str_format = '%Y-%m-%d')).days
     daterange = []
     for i in range(datelen+1):
-        new_day = scheduling.parse_time(start, '%Y-%m-%d') + datetime.timedelta(days = i)
+        new_day = parse_time(start, '%Y-%m-%d') + datetime.timedelta(days = i)
         daterange.append(new_day.strftime('%Y-%m-%d'))
     return daterange
 
