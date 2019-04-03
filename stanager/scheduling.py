@@ -27,7 +27,7 @@ def check_available(available, proposal):
     return checked, occupation
 
 def date_range(start, end):
-    datelen = (scheduling.parse_time(end, str_format = '%Y-%m-%d') - scheduling.parse_time(start, str_format = '%Y-%m-%d')).days
+    datelen = (parse_time(end, str_format = '%Y-%m-%d') - parse_time(start, str_format = '%Y-%m-%d')).days
     daterange = []
     for i in range(datelen+1):
         new_day = parse_time(start, '%Y-%m-%d') + datetime.timedelta(days = i)
