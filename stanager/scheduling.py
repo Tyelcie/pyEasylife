@@ -34,7 +34,7 @@ def date_range(start, end):
     return daterange
 
 class Mentor:
-    def __init__(self, name, available, min_per_day, rest = 10, schedule = {}):
+    def __init__(self, name, available, rest = 10, schedule = {}):
         '''available: list of tuples enveloping start time and end time'''
         self.name = name
         self.__reg_available = available.copy()
