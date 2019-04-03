@@ -40,7 +40,6 @@ class Mentor:
         self.__reg_available = available.copy()
         self.available = available
         self.rest = rest
-        self.min_per_day = min_per_day
         self.schedule = schedule
     def get_reg_available(self):
         return self.__reg_available
