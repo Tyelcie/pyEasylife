@@ -1,5 +1,5 @@
 # stanager
-Students Observer. Process and visualize data of students learning pattern, along with other operation helpers like scheduling and wechat mass texting.
+Students Observer. Process and visualize data of students' learning patterns, along with other operation support like scheduling and wechat texting.
 
 ## Install
 
